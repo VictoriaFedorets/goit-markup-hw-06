@@ -378,12 +378,12 @@ address {
 
 /* =============Section 3 team============ */
 
-.team-container {
-  padding: 96px 28px;
-}
-
 .team {
   background-color: #f4f4fd;
+}
+
+.team-container {
+  padding: 96px 28px;
 }
 
 .team-list {
@@ -1017,6 +1017,36 @@ address {
 
   .advantages-list {
     width: calc((100%-24) / 2);
+  }
+
+  /* portfolio */
+
+  .team {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  .team-container {
+    padding: 96px 108px;
+  }
+
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 64px;
+  }
+
+  .team-card {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .card-content .title-three {
+    text-align: center;
+  }
+
+  .card-content .text {
+    margin-bottom: 8px;
   }
 }
 
