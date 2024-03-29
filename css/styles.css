@@ -48,9 +48,7 @@ address {
 } */
 
 .container {
-  /* width: 1158px; */
   max-width: 320px;
-  /* padding: 0 15px; */
   padding: 0 16px;
   margin: 0 auto; /* Для центрування */
 }
@@ -58,8 +56,8 @@ address {
 /* ==================Header================== */
 .header {
   border-bottom: 1px solid #e7e9fc;
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  /* box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08); */
 }
 
 .header-container {
@@ -83,7 +81,7 @@ address {
   text-transform: uppercase;
 
   /* margin-right: 76px; */
-  padding: 17px 0;
+  padding: 16px 0;
 }
 
 .logo-part {
@@ -113,7 +111,7 @@ address {
   gap: 40px;
 } */
 
-.address-link {
+/* .address-link {
   color: #434455;
   font-size: 16px;
   line-height: 1.5;
@@ -132,8 +130,7 @@ address {
 .address-link:hover,
 .address-link:focus {
   color: #404bbf;
-}
-
+} */
 /* moob menu */
 .mob-menu {
   position: fixed;
@@ -543,6 +540,9 @@ address {
 }
 
 .container-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   /* padding: 0; */
 
   /* margin-right: 120px; */
@@ -573,6 +573,12 @@ address {
 
   max-width: 264px;
   margin: 0;
+}
+
+.media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .media-footer-list {
@@ -615,13 +621,22 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
-  margin-bottom: 16px;
+  padding: 0 auto;
+}
+
+.footer-subscribe {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 }
 
 .footer-form {
+  width: 100%;
   /* display: flex;
   flex-direction: column; */
-  gap: 24px;
+  /* gap: 24px; */
 }
 
 .footer-form-lab {
@@ -648,7 +663,8 @@ address {
 
 .footer-form-btn {
   border-radius: 4px;
-
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 16px;
   /* padding: 8px 24px; */
   width: 165px;
@@ -664,7 +680,7 @@ address {
   align-items: center;
   justify-content: center;
   color: #fff;
-  /* gap: 16px; */
+  gap: 16px;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -934,7 +950,6 @@ address {
   }
 
   .logo {
-    padding-top: 24px;
     margin-right: 120px;
   }
 
@@ -979,11 +994,11 @@ address {
     display: block;
   }
 
-  .address-link {
+  /* .address-link {
     display: flex;
     flex-direction: column;
     gap: 12px;
-  }
+  } */
 
   .address-link {
     font-size: 12px;
@@ -999,6 +1014,8 @@ address {
 
   /* adv */
 
+  .advantages {
+  }
   .advantages-container {
     padding: 0;
     max-width: 736px;
@@ -1010,9 +1027,10 @@ address {
 
   .items-advantages {
     flex-direction: row;
-    /* flex-wrap: wrap; */
-    row-gap: 72px;
+    flex-wrap: wrap;
+
     column-gap: 24px;
+    row-gap: 72px;
   }
 
   .advantages-list {
