@@ -48,6 +48,10 @@ button {
   margin: 0 auto; /* Для центрування */
 }
 
+.section {
+  padding: 96px 0;
+}
+
 /* ==================Header================== */
 .header {
   border-bottom: 1px solid #e7e9fc;
@@ -137,7 +141,6 @@ button {
 }
 
 .mob-menu-list {
-  margin-bottom: 50px;
 }
 
 .mob-menu-item:not(:last-child) {
@@ -160,7 +163,7 @@ button {
 }
 
 .mob-address {
-  padding-bottom: 48px;
+  margin-bottom: 48px;
 }
 
 .mob-address-link {
@@ -237,7 +240,8 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
 
-  padding: 0 52px;
+  max-width: 216px;
+  /* padding: 0 52px; */
   margin-bottom: 72px;
   /* margin-bottom: 48px; */
 }
@@ -304,11 +308,9 @@ button {
 /* ================Section 2 advantages===================== */
 
 .advantages {
-  padding: 96px 0;
 }
 
 .advantages-container {
-  padding: 0 16px;
 }
 
 .visually-hidden {
@@ -361,7 +363,6 @@ button {
 }
 
 .team-container {
-  padding: 96px 28px;
 }
 
 .team-list {
@@ -381,7 +382,7 @@ button {
 }
 
 .card-content {
-  padding: 32px 16px;
+  padding: 32px 0;
   text-align: center;
 }
 
@@ -428,10 +429,6 @@ button {
 }
 
 /* =============Section 4  portfolio============ */
-
-.portfolio .container {
-  padding: 96px 16px;
-}
 
 .project-list {
   display: flex;
@@ -515,7 +512,6 @@ button {
 
 .page-footer {
   /* padding: 100px 0; */
-  padding: 96px 0;
   color: #f4f4fd;
   background-color: #2e2f42;
 }
@@ -546,7 +542,7 @@ button {
   text-transform: uppercase;
 
   display: inline-block;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .part-logo-name {
@@ -611,7 +607,7 @@ button {
   letter-spacing: 0.02em;
   color: #ffffff;
   /* margin: 0 auto; */
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .footer-subscribe {
@@ -640,10 +636,10 @@ button {
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: transparent;
-  /* padding-left: 16px;
+  padding-left: 16px;
   padding-top: 8px;
-  padding-bottom: 8px; */
-  /* font-weight: 400; */
+  padding-bottom: 8px;
+  font-weight: 400;
 
   font-size: 12px;
   line-height: 2;
@@ -656,7 +652,7 @@ button {
   margin-left: auto;
   margin-right: auto;
   margin-top: 16px;
-  /* padding: 8px 24px; */
+  padding: 8px 24px;
   width: 165px;
   /* min-width: 165px; */
   height: 40px;
@@ -682,7 +678,6 @@ button {
 
 .footer-form-icon {
   fill: #fff;
-  margin-left: 16px;
 }
 
 /* ================Modal============ */
@@ -1040,7 +1035,8 @@ button {
   .title {
     font-size: 56px;
     line-height: 1.07;
-    padding: 0 136px;
+    max-width: 496px;
+    /* padding: 0 136px; */
     margin-bottom: 36px;
   }
 
@@ -1069,8 +1065,7 @@ button {
   /* team */
 
   .team-container {
-    padding-left: 108px;
-    padding-right: 108px;
+    width: 552px;
   }
 
   .team-list {
@@ -1098,9 +1093,6 @@ button {
   }
 
   /* portfolio */
-  .portfolio {
-    padding-top: 96px;
-  }
 
   .project-list {
     flex-direction: row;
@@ -1153,7 +1145,7 @@ button {
   }
 
   .text-icon {
-    margin: 0;
+    margin: 0 0 16px 0;
   }
 
   .footer-form {
@@ -1203,11 +1195,13 @@ button {
 
   /* hero */
   .hero {
-    max-width: 1158px;
+    max-width: 1440px;
   }
 
   .hero .container {
+    max-width: 1440px;
     padding: 188px 0;
+    margin: 0 auto;
     background-image: linear-gradient(
         to bottom,
         rgba(46, 47, 66, 0.7),
@@ -1234,7 +1228,7 @@ button {
     line-height: 1.07;
     max-width: 496px;
     height: 120px;
-    padding: 0;
+
     margin-bottom: 48px;
   }
 
@@ -1258,8 +1252,9 @@ button {
   }
 
   /* team */
+
   .team-container {
-    padding: 120px 15px;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -1273,9 +1268,6 @@ button {
   }
 
   /* portf */
-  .portfolio .container {
-    padding: 0 16px;
-  }
 
   .project-list {
     gap: 48px 24px;
@@ -1286,6 +1278,11 @@ button {
   }
 
   /* footer */
+
+  .page-footer {
+    padding: 100px 0;
+  }
+
   .container-footer {
     width: 100%;
     flex-wrap: nowrap;
@@ -1293,24 +1290,12 @@ button {
     gap: 0;
   }
 
-  .page-footer {
-    padding: 100px 0;
-  }
-
   .container-logo {
-    padding-bottom: 72px;
-    padding: 0;
     margin-right: 120px;
   }
 
   .media {
     margin-right: 80px;
-  }
-
-  .footer-input {
-    padding-left: 16px;
-    padding-top: 8px;
-    padding-bottom: 8px;
   }
 
   .modal {
